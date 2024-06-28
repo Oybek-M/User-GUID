@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Boostrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-container">
+        <!-- Aside | left NavBar -->
+        <aside class="sidebar">
+            <!-- 1: tahsinERP/Login -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="#login" aria-current="page" class="active sidebar-link">
+                                1. tahsinERP ga kirish
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 2: tahsinERP/Home -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="#ERPbilanIshlash" aria-current="page" class="sidebar-link">
+                                2. tahsinERP bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#profilSozlamalari" aria-current="page" class="sidebar-link">
+                                        2.1 Profil sozlamalari
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#logout" aria-current="page" class="sidebar-link">
+                                        2.2 Profildan chiqish
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 3: tahsinERP/Dashboard -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="#dashboardBilanIshlash" aria-current="page" class="sidebar-link">
+                                3. 'Dashboard' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="" aria-current="page" class="sidebar-link">
+                                        3.1 Coming soon.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 4: tahsinERP/Tanimotchilar -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="#taminotchilarBilanIshlash" aria-current="page" class="sidebar-link">
+                                4. 'Tanimotchilar' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#taminotchilar" aria-current="page" class="sidebar-link">
+                                        4.1 Ta'minotchilar
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#ehtiyotQismlar" aria-current="page" class="sidebar-link">
+                                        4.2 Ehtiyot qismlar
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 5: tahsinERP/Shartnomalar -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                5. 'Shartnomalar' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#ishlash-printsiplari" aria-current="page" class="sidebar-link">
+                                        5.1 Barchasi
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#fulfilment-qanday-ishlaydi" aria-current="page" class="sidebar-link">
+                                        5.2 KD
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        5.3 Po'lat o'ramlar
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        5.4 Maxalliy
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 6: tahsinERP/Buyurtmalar -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                6. 'Buyurtmalar' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#ishlash-printsiplari" aria-current="page" class="sidebar-link">
+                                        6.1 Barchasi
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#fulfilment-qanday-ishlaydi" aria-current="page" class="sidebar-link">
+                                        6.2 KD
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        6.3 Po'lat o'ramlar
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        6.4 Maxalliy
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 7: tahsinERP/Invoice -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                7. 'Invoice' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#ishlash-printsiplari" aria-current="page" class="sidebar-link">
+                                        7.1 Barchasi
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#fulfilment-qanday-ishlaydi" aria-current="page" class="sidebar-link">
+                                        7.2 KD
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        7.3 Po'lat o'ramlar
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        7.4 Maxalliy
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 8: tahsinERP/Logistika -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                8. 'Logistika' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#ishlash-printsiplari" aria-current="page" class="sidebar-link">
+                                        8.1 Logistika ma'lumotlari
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#fulfilment-qanday-ishlaydi" aria-current="page" class="sidebar-link">
+                                        8.2 Logistika ma'lumotlari
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        8.3 Ro'yxat
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        8.4 Yo'ldagi yuklar
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 9: tahsinERP/Omborlash -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                9. 'Omborlash' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#ishlash-printsiplari" aria-current="page" class="sidebar-link">
+                                        9.1 Qoldiq
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#fulfilment-qanday-ishlaydi" aria-current="page" class="sidebar-link">
+                                        9.2 Kirim
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        9.3 Chiqim
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#uzum-da-sоtish-taqiqlanadi" aria-current="page" class="sidebar-link">
+                                        9.4 Ombor ma'lumotlari
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 10: tahsinERP/BOM -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                10. 'BOM' bilan ishlash
+                            </a>
+                            <ul class="sidebar-sub-headers">
+                                <li class="sidebar-sub-header">
+                                    <a href="#ishlash-printsiplari" aria-current="page" class="sidebar-link">
+                                        10.1 Xarajatlar stavkasi
+                                    </a>
+                                </li>
+                                <li class="sidebar-sub-header">
+                                    <a href="#fulfilment-qanday-ishlaydi" aria-current="page" class="sidebar-link">
+                                        10.2 Sayanso
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 11: tahsinERP/Tayyor mahsulot -->
+            <ul class="sidebar-links">
+                <li>
+                    <ul class="sidebar-sub-headers">
+                        <li>
+                            <a href="./pages/2.html" aria-current="page" class="sidebar-link">
+                                11. 'Tayyor maxsulot' bilan ishlash
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="page">
+            <!-- 1 -->
+            <div class="theme-default-content content__default">
+                <h1>
+                    tahsinERP bilan ishlash bo'yicha yo'riqnoma
+                </h1>
+                <h3 id="login" class="mb-2 !important">
+                    <a href="#login" class="header-anchor">#</a>
+                    1. tahsinERP ga foydalanuvchilar qanday kiradi ?
+                </h3>
+                <p>
+                    <img src="./images/login.png" alt="login" class="medium-zoom-image">
+                </p>
+                <p>
+                    Ushbu sahifada foydalanuvchi o'z Email va Kalit so'zi(parol) orqali kirishi mumkin.
+                    <br>
+                    Email va Kalit so'zi(parol) to'g'ri kiritilishi shart
+                </p>
+                <p>
+                    Agarda Kalit so'zi(parol)ni unutgan bo'lsangiz yoki biror muammo bo'lsa:
+                    <br>
+                    <a href="#" id="blockRefresh" rel="noopener noreferrer">
+                        Kalit so'zini unutdingizmi?
+                    </a>
+                    orqali Admin ga murojaat qilishingiz mumkin.
+                </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="theme-default-content content__default">
+                <h3 id="ERPbilanIshlash">
+                    <a href="#ERPbilanIshlash" class="header-anchor">#</a>
+                    2. tahsinERP bilan ishlash
+                </h3>
+                <h4 id="profilSozlamalari">
+                    <a href="#profilSozlamalari" class="header-anchor">#</a>
+                    2.1 Profil sozlamalari
+                </h4>
+                <p>
+                    <img src="../images/toSettings.png" alt="settings" class="medium-zoom-image">
+                </p>
+                <p>
+                    Profil sozlamalariga chap tomondagi menyu ning pastki qismida joylashgan
+                    <br>
+                    <a href="#" id="blockRefresh" rel="noopener noreferrer">Akkount sozlamalari</a>
+                    tugmasini bosih orqali yoki,
+                    <br>
+                    o'ng yuqori qismdagi "email" ni bosganingizda chiqadigan munyulardan 
+                    <br>
+                    <a href="#" id="blockRefresh" rel="noopener noreferrer">Akkount sozlamalari</a>
+                    tugmasini bosih orqali kirishingiz mumkin.
+                    <br>
+                </p>
+                <br>
+                <p>
+                    <img src="../images/inSettings.png" alt="settings" class="medium-zoom-image">
+                </p>
+                <p>
+                    Ushbu oynadan siz <br>
+                    <strong>Profil rasm</strong>ingizni, <br>
+                    <strong>Foydalanuvchi nomi</strong>ngizni, <br>
+                    <strong>F.I.SH</strong>ingizni, <br>
+                    <strong>Email</strong>ingizni
+                    va
+                    <strong>Parol</strong>ingizni o'zgartirishingiz mumkin.
+                </p>
+                <p>
+                    O'zgartirishlarni saqlash uchun <strong>hozirgi amaldagi parol</strong> kiritishingiz so'raladi.
+                </p>
+                <h4 id="logout">
+                    <a href="#logout" class="header-anchor">#</a>
+                    2.2 Profildan chiqish
+                </h4>
+                <p>
+                    <img src="./images/logout.png" alt="logout">
+                </p>
+                <p>
+                    Profildan chiqish uchun, yuqorida ko'rsatilganidek, "Email" tugmasini bosganda chiqadigan
+                    <br>
+                    <a href="#" id="blockRefresh" rel="noopener noreferrer">Tizimdan chiqish</a>
+                    tugmasini bosish orqali chiqish mumkin.
+                </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="theme-default-content content__default">
+                <h3 id="dashboardBilanIshlash">
+                    <a href="#dashboardBilanIshlash" class="header-anchor">#</a>
+                    3. Dashboard bilan ishlash
+                </h3>
+                <br>
+                <p>
+                    Tez orada...
+                </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="theme-default-content content__default">
+                <h3 id="taminotchilarBilanIshlash">
+                    <a href="#taminotchilarBilanIshlash" class="header-anchor">#</a>
+                    4. Taminotchilar bilan ishlash
+                </h3>
+                <h4 id="taminotchilar">
+                    <a href="#taminotchilar" class="header-anchor">#</a>
+                    4.1 Taminotchilar
+                </h4>
+                
+                <h4 id="ehtiyotQismlar">
+                    <a href="#ehtiyotQismlar" class="header-anchor">#</a>
+                    4.2 Ehtiyot qismlar
+                </h4>
+                
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+
+    <!-- Boostrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
